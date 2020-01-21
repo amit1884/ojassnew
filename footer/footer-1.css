@@ -1,0 +1,15 @@
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+  #animate-area {
+    width: 100%;
+    /* height:fit-content; */
+        background: #183054;;
+  }
+  /*------- for more tutorials visit www.twoclock.com*/

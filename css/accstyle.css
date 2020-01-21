@@ -1,0 +1,99 @@
+
+.accordion {
+  font-size: 20px;
+  width: 50vw;
+  margin:-1%;
+  /* border-radius: 5px; */
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 1em 1em;
+  background: rgb(1, 45, 88);
+  width:93%;
+  margin:4%;
+  border-radius:10px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  /* letter-spacing: .em; */
+  transition: all .3s;
+  /* text-transform: uppercase; */
+}
+
+.accordion__item {
+    /* border-bottom: 1px solid #fff; */
+    margin-bottom: 15px;
+}
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  /* background: #2D3D99; */
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: #f8fdf5;
+  color: #353535;
+  display: none;
+  width:93%;
+  border-radius:10px;
+  margin:4%
+}
+
+.accordion-body__contents {
+  padding:4%;
+  font-size: 15px;
+  line-height: 1.7em;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item > .accordion-header:after {
+  content: "\276F";
+  font-family: IonIcons;
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(90deg);
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: #353535;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+    margin:0;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+}
+.faq-wrapper{
+  position:relative;
+  min-height:80vh;
+}
