@@ -1,5 +1,19 @@
 <style>
-    
+    #loader-wrapper {
+    height: 100vh;
+    width: 100vw;
+    /* background: ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+    overflow: hidden;
+}
 
 /* The loader container */
 .loader {

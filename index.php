@@ -93,10 +93,10 @@
     height:280px;
     margin-left:2%;
   }
-
+/* 
   .abt-foo{
     display:none;
-  }
+  } */
 
   #scroll_id {
     background: rgb(142, 193, 218);
@@ -110,9 +110,9 @@
   </head>
   <body>
 
-  <div id ="loader-wrapper">
-<?php include_once 'loader.php';?>
-</div>
+  <!-- <div id ="loader-wrapper">
+<?php //include_once 'loader.php';?>
+</div> -->
 <br><br>
   <div class ="main-header-20">
   <div class ="head" style ="margin-left:15%;">
@@ -225,7 +225,7 @@ jQuery(window).scroll(function() {
     </script>
 
 
-<script>
+<!-- <script>
 jQuery(document).ready(function($) {  
 
 $(window).load(function(){
@@ -236,7 +236,7 @@ $(window).load(function(){
 });
 
 });
-  </script>
+  </script> -->
   
 </body>
 </html>
