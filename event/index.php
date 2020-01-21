@@ -96,12 +96,15 @@
     <a href="../" ><img class="logo_light" src="img/newlogo.png" alt="logo" /></a>
     <span id="event_title"class ="event_title"style =" font-size:20px;font-family: 'Play', sans-serif;color:#000;"><?php echo str_replace("_"," ",$_GET['branch']) ?></span></div>
     <br>
+            <div class ="side-preload fade-element-in" ng-if="!flag">
+              <?php include_once 'evnt-loader.php';?>
+            </div>
     <div class ="nav-eve">
     <nav class =" menu-navigation-dark subevent"  id='bottomMenu' class="fade-element-in" ng-if="flag" ng-cloak>
     <a style="word-wrap: break-word;display:block;color:#fff;font-size:20px;padding-top:10px;margin:8px;" ng-repeat="event in events" href="#" id ="eve-name"class="event-name" name="{{event.name.split(' ').join('').split('.').join('')}}">
                       {{ event.name }}</a>
                       </div>
-    </div>
+        </div>
     <div class="menu-icon">
         <div class="line_one" style ="background-color:black;"></div>
         <div class="line_two" style ="background-color:black;"></div>
@@ -132,27 +135,22 @@
     </div>
   
     <div class="row" >
-          <div class="col-xs-12">
-              <div class ="eve-loader">
+        <div class="col-xs-12">
+            <div class ="eve-loader">
               <h4 class="fade-element-in" ng-if="!flag" style ="font-size:30px;margin-top:30px;margin-bottom:10px;"><span>Loading...</span><br><br>
                 <div class ="cat-load">
-                <?php include_once '../evnt-loader.php';?>
-               
+                <?php include_once '../evnt-loader.php';?>   
+                </div>
+                </h4>
+            </div>
         </div>
-
-        </h4>
-        </div>
-          </div>
-        </div>
+      </div>
 
 
         <div ng-repeat="event in events" class="event-wrapper main-display" id="{{event.name.split(' ').join('') | removeBrackets}}" style="display:none;">
         
-        
-        <!-- <nav class="top"> -->
-  <!-- <menu class ="sidebarmenu"> -->
     
-  <div class ="container-fluid ">
+  <div class ="container-fluid top ">
     <div class ="row text-center icon-row">
       <div class ="col-1"></div>
     <div class ="col-2 sidebarmenu"><a href="#" class="c1 eve-icon20" name ="about" >
@@ -168,24 +166,6 @@
         </div>
         </div>
         <br>
-      <!-- <a class="c1 eve-icon20" href="#" name ="about" >
-        <span><i class="fa fa-address-book-o" style="color:#000"></i></span>
-      </a>
-      <a class="c2 eve-icon20" href="#" name="detail">
-        <span>&nbsp;<i class="fa fa-info" style="color:#000"></i></span>
-      </a>
-      <a class="c3 eve-icon20" href="#" name="prizes">
-        <span><i class="fa fa-trophy" style="color:#000"></i></span>
-      </a>
-      <a class="c4 eve-icon20" href="#" name ="rules">
-        <span><i class="fa fa-book" style="color:#000"></i></span>
-      </a>
-      <a class="c5 eve-icon20" href="#" name ="coordinators">
-        <span><i class="fa fa-users" style="color:#000"></i></span>
-      </a> -->
-  <!-- </menu> -->
-<!-- </nav> -->
-        
         <div class="row">
           <div class="col-xs-12 mainarea">
             <div class="row text-center">

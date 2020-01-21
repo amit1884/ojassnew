@@ -89,8 +89,8 @@
     color:#000;
   }
   .logo-20{
-    width:92%;
-    height:320px;
+    width:85%;
+    height:280px;
     margin-left:2%;
   }
 
